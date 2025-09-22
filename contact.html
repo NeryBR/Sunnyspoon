@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunny Spoon — Contact</title>
+  <meta name="description" content="Contact Sunny Spoon for reservations, events, or inquiries.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Sunny Spoon</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-contact card">
+      <h2>Contact Us</h2>
+      <p class="lead">Reach out for reservations, events, or questions. We're happy to help.</p>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-info card">
+        <h3>Location</h3>
+        <p>Dinmukhamed Kunaev St 12, Astana, Kazakhstan</p>
+
+        <h3>Opening Hours</h3>
+        <p>Mon–Fri: 09:00–22:00<br>Sat–Sun: 10:00–23:00</p>
+
+        <h3>Phone & Email</h3>
+        <p><a href="tel:+77010000000">+7 (701) 000-0000</a><br><a href="mailto:info@sunnyspoon.kz">info@sunnyspoon.kz</a></p>
+
+        <h3>Follow us</h3>
+        <p><a href="#" aria-label="Instagram">Instagram</a> • <a href="#" aria-label="Facebook">Facebook</a></p>
+
+        <h3>Map (placeholder)</h3>
+        <p>Embed a Google Map iframe here for the real project.</p>
+      </div>
+
+      <div class="contact-form card">
+        <h3>Send a Message or Request a Reservation</h3>
+        <form id="contactForm" onsubmit="submitForm(event)" method="post" action="#">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="phone">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="date">Preferred date (optional)</label>
+          <input id="date" name="date" type="date">
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="formResult" class="form-result" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Quick Contact</h3>
+      <p>For urgent reservations please call: <a href="tel:+77010000000">+7 (701) 000-0000</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Team: <strong>SunnySpoon</strong></p>
+      <p>Member: <strong>Mansur Urynbassar</strong></p>
+      <p>&copy; 2025 Sunny Spoon</p>
+    </div>
+  </footer>
+
+<script>
+document.getElementById('formResult') && (document.getElementById('formResult').textContent = '');
+function submitForm(e){
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  document.getElementById('formResult').textContent = 'Thanks, ' + name + '! Your message has been received (demo).';
+  document.getElementById('contactForm').reset();
+}
+</script>
+</body>
+</html>

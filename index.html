@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunny Spoon — Home</title>
+  <meta name="description" content="Sunny Spoon — cozy family restaurant in Astana. Fresh seasonal dishes and warm atmosphere.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Sunny Spoon</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <h2>Welcome to Sunny Spoon</h2>
+      <p class="lead">Comfort food with a modern twist — open daily for breakfast, lunch, and dinner.</p>
+      <p><strong>Today's special:</strong> Honey-glazed trout with roasted root vegetables — <span class="price">2,500 KZT</span></p>
+      <div style="margin-top:.75rem;">
+        <a class="btn" href="menu.html">See full menu</a>
+        <a class="btn-outline" href="contact.html">Reserve a table</a>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="card">
+        <h3>Why customers love us</h3>
+        <ul>
+          <li>Seasonal, locally-sourced ingredients</li>
+          <li>Homemade breads and desserts</li>
+          <li>Cozy, family-friendly atmosphere</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Upcoming events</h3>
+        <p><strong>Live Jazz Night</strong> — Saturday, 19:00. Free entry. Reservation recommended.</p>
+        <p><strong>Cooking workshop</strong> — Learn to bake our sourdough, monthly on Sundays.</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Gallery</h3>
+      <div class="gallery">
+        <!-- placeholders for images -->
+        <img src="images/gallery1.jpg" alt="Dish 1 (placeholder)">
+        <img src="images/gallery2.jpg" alt="Interior (placeholder)">
+        <img src="images/gallery3.jpg" alt="Dessert (placeholder)">
+      </div>
+    </section>
+
+    <section class="card testimonials" aria-label="Customer testimonials">
+      <div class="testimonial">
+        "Cozy place and amazing pancakes — a must visit!" — Aigerim
+      </div>
+      <div class="testimonial">
+        "Friendly staff and great coffee. Perfect for working afternoons." — Daniyar
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Subscribe to our newsletter</h3>
+      <p class="lead">Get weekly specials and event updates.</p>
+      <form onsubmit="event.preventDefault(); alert('Subscribed (demo)')">
+        <input type="email" placeholder="Your email" required style="padding:.6rem;border-radius:8px;border:1px solid #eee;width:60%">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Team: <strong>SunnySpoon</strong></p>
+      <p>Member: <strong>Mansur Urynbassar</strong></p>
+      <p>&copy; 2025 Sunny Spoon</p>
+    </div>
+  </footer>
+</body>
+</html>
