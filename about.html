@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunny Spoon — About</title>
+  <meta name="description" content="About Sunny Spoon — our story, mission and the team.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Sunny Spoon</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-about card">
+      <h2>About Sunny Spoon</h2>
+      <p class="lead">A modern family restaurant serving fresh, seasonal dishes with love.</p>
+    </section>
+
+    <section class="two-col">
+      <div class="card">
+        <h3>Our Story</h3>
+        <p>Sunny Spoon started in 2020 as a small kitchen project. Our founder wanted to combine traditional Kazakh hospitality with modern culinary techniques.</p>
+        <p>We bake bread daily, source from local farms, and adapt menus to the season. Our goal is to create food that feels like home.</p>
+      </div>
+      <div class="card">
+        <h3>Our Values</h3>
+        <ul>
+          <li>Fresh ingredients</li>
+          <li>Sustainable sourcing</li>
+          <li>Welcoming atmosphere</li>
+          <li>Community events and workshops</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Meet the Team</h3>
+      <div class="team-grid">
+        <div class="member"><strong>Mansur</strong><p>Founder & Head Chef — loves seasonal cooking and sourdough.</p></div>
+        <div class="member"><strong>Aida</strong><p>Manager — ensures every guest feels at home.</p></div>
+        <div class="member"><strong>Rina</strong><p>Barista & pastry — creates weekly dessert specials.</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>Timeline & Achievements</h3>
+      <ul>
+        <li><strong>2020</strong> — Sunny Spoon opens as a home-kitchen pop-up.</li>
+        <li><strong>2021</strong> — First local market stall and community events.</li>
+        <li><strong>2022</strong> — Expanded menu and regular weekend brunch service.</li>
+      </ul>
+    </section>
+
+    <section class="card accordion" id="faq">
+      <h3>FAQ</h3>
+      <button onclick="togglePanel(this)">Do you take reservations?</button>
+      <div class="panel"><p>Yes — reservations recommended for weekends. Use the contact form or call us.</p></div>
+      <button onclick="togglePanel(this)">Do you have vegetarian options?</button>
+      <div class="panel"><p>Yes — we clearly mark vegetarian and gluten-free options on the menu.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Team: <strong>SunnySpoon</strong></p>
+      <p>Member: <strong>Mansur Urynbassar</strong></p>
+      <p>&copy; 2025 Sunny Spoon</p>
+    </div>
+  </footer>
+
+<script>
+function togglePanel(btn){
+  var panel = btn.nextElementSibling;
+  panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
+}
+</script>
+</body>
+</html>
